@@ -1,0 +1,34 @@
+.album{
+
+    &__page {
+        padding: 0 8px;
+        grid-gap: 8px;
+        color: black;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    &__items {
+        width: 80%;
+        column-count: 4;
+        column-gap: 1em;
+        margin: auto;
+        
+        @media screen and (max-width: 1450px){
+            column-count: 3;
+        }
+    }
+
+    &__item {
+        background-color: #eee;
+        display: inline-block;
+        margin: 0 0 1em;
+        width: 100%;
+
+        @media screen and (max-width: 1450px){
+            grid-column: 1/2;
+            transform: skewX(0deg);
+        }
+    }
+}
+

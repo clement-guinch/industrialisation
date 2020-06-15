@@ -1,0 +1,98 @@
+.clt{
+
+    &__page {
+        width: 100%;
+    }
+
+    &__description {
+        width: 80%;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    &__membres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 80%;
+        margin: auto;
+
+        @media screen and (max-width: 980px){
+            flex-direction: column;
+        }
+    }
+
+    &__social-link {
+        display: flex;
+
+        & a {
+            margin-right: 25px;
+        }
+    }
+
+    &__membre {
+        background-size: cover; 
+        filter: grayscale(1) blur(1px);
+        transition: 0.4s;
+        position: relative;
+        width: calc(100%/3);
+        height: 100%;
+
+        @media screen and (max-width: 980px){
+            flex-direction: column;
+            width: 100%;
+            height: calc(100%/3);
+        }
+
+        &--1 {
+            background-image: url("/images/1920x1080.jpg");
+            background-position: left; 
+        }
+
+        &--2 {
+            background-image: url("/images/test.jpg");
+            background-position: center;
+        }
+
+        &--3{
+            background-image: url("/images/voilavoila.jpg");
+            background-position: right; 
+        }
+
+        &-info {
+            background: rgba(0, 0, 0, 0.603);
+            padding: 15px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            position: absolute;
+            transform-origin: center;
+            left: 50%;
+            bottom: 50px;
+            opacity: 0;
+
+            @media screen and (max-width: 980px){
+                bottom: 0;
+                left: 25%;
+                width: 75%;
+            }
+        }
+
+        &:hover {
+            width: 90%;
+            filter: grayscale(0) blur(0px);
+            transition: 0.4s;
+
+            & .clt__membre-info {
+                opacity: 1;
+            }
+
+            @media screen and (max-width: 980px){
+                height: 90%;
+                width: 100%;
+            }
+    }
+    }}
+

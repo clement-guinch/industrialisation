@@ -1,0 +1,11 @@
+.background {
+    &__presentation {
+        // clip-path: polygon(83% 0, 100% 0, 100% 100%, 25% 100%);
+        clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
+        // clip-path: polygon(75% 0, 100% 0, 100% 100%, 0 100%, 0 75%, 45% 75%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}

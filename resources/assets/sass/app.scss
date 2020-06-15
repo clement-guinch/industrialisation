@@ -1,0 +1,26 @@
+
+// Fonts
+// @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+@import "swiper";
+@import "icon";
+
+
+// Pages
+
+//standard
+ @import "views/album";
+ @import "views/comment";
+ @import "views/main";
+ @import "views/post";
+ @import "views/presentation";
+@import "background";
+
+//admin
+@import "admin/views/images/index";
+
+
+// Bootstrap
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
