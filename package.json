@@ -24,7 +24,7 @@
         "bootstrap-sass": "^3.4.1",
         "jquery": "^3.4.1",
         "masonry-layout": "^4.2.2",
-        "swiper": "^5.2.0",
+        "swiper": "^6.5.1",
         "vue": "^2.6.10"
     }
 }
